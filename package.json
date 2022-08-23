@@ -1,10 +1,10 @@
 {
   "name": "solution",
   "version": "1.0.0",
-  "description": "",
   "main": "shipit-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,16 @@
     "colors": "*",
     "cors": "*",
     "express": "^5.0.0-alpha.8",
-    "jsonschema": "*",
+    "jsonschema": "^1.4.1",
     "supertest": "*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leTpham/express-shipping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leTpham/express-shipping/issues"
+  },
+  "homepage": "https://github.com/leTpham/express-shipping#readme",
+  "description": ""
 }
