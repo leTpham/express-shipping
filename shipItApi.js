@@ -12,8 +12,7 @@ const axios = require("axios");
  */
 
 async function shipProduct({ productId, name, addr, zip }) {
-  console.warn("Called our real shipProduct function");
-
+ 
   const resp = await axios({
     method: "POST",
     url: SHIPIT_SHIP_URL,
@@ -29,4 +28,4 @@ async function shipProduct({ productId, name, addr, zip }) {
   return resp.data.receipt.shipId;
 }
 
-module.exports = { shipProduct };
+module.exports = { shipProduct, SHIPIT_SHIP_URL };
